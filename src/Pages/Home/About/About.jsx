@@ -19,12 +19,12 @@ const About = () => {
           <p className="">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
+            humour, or randomised words which do not look even slightly
             believable.
           </p>
           <p>
             the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
+            humour, or randomised words which do not look even slightly
             believable.
           </p>
           <button className="bg-[#FF3811] btn text-white">Get More Info</button>

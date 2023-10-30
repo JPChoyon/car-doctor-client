@@ -1,6 +1,7 @@
 import Footer from "../../Component/Footer/Footer";
 import About from "./About/About";
 import Banner from "./Banner/Banner";
+import Services from "./Services/Services";
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <About></About>
+      <Services></Services>
       <Footer></Footer>
     </div>
   );
