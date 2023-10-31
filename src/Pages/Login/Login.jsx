@@ -1,12 +1,25 @@
 import { Link } from "react-router-dom";
 import img from "../../assets/images/login/login.svg";
+import { useContext } from "react";
+import { AuthContext } from "../../Context/Context";
 
 
 const Login = () => {
-  const handleLogin = (e) => {
-    e.preventDefault();
-    
-  }
+   const {signIn} = useContext(AuthContext);
+
+   const handleLogin = (e) => {
+     e.preventDefault();
+     const form = e.target;
+     const email = form.email.value;
+     const password = form.password.value;
+     console.log(name, email, password);
+
+     signIn(email, password)
+       .then((res) => {
+         console.log(res.user);
+       })
+       .catch((err) => console.log(err));
+   };
   
 
   return (
@@ -48,7 +61,7 @@ const Login = () => {
               </div>
               <div className="form-control mt-6">
                 <input
-                  className="btn btn-primary"
+                  className="btn bg-orange-500 text-white"
                   type="submit"
                   value="Login"
                 />
