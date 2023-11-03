@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Navigate } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { useContext } from "react";
 import { AuthContext } from "../../Context/Context";
@@ -36,6 +36,7 @@ const Navbar = () => {
       </NavLink>
       {user?.email ? (
         <>
+          <Navigate to={"/"}></Navigate>
           <li>
             <Link to="/bookings">My Bookings</Link>
           </li>
