@@ -58,7 +58,7 @@ const Context = ({ children }) => {
     return () => {
       return unSubscribe;
     };
-  }, []);
+  }, [user?.email]);
 
   const authInfo = {
     user,
